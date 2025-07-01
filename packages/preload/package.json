@@ -20,5 +20,8 @@
     "mlly": "1.7.4",
     "typescript": "5.8.3",
     "vite": "6.3.5"
+  },
+  "dependencies": {
+    "sharp": "^0.34.2"
   }
 }

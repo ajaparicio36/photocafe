@@ -37,5 +37,12 @@
   },
   "dependencies": {
     "@app/main": "*"
+  },
+  "build": {
+    "asar": true,
+    "asarUnpack": [
+      "**/node_modules/sharp/**/*",
+      "**/node_modules/@img/**/*"
+    ]
   }
 }
