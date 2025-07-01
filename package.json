@@ -36,13 +36,25 @@
     "playwright": "^1.53.1"
   },
   "dependencies": {
-    "@app/main": "*"
+    "@app/main": "*",
+    "detect-libc": "^2.0.3",
+    "sharp": "^0.34.2"
   },
   "build": {
     "asar": true,
     "asarUnpack": [
       "**/node_modules/sharp/**/*",
-      "**/node_modules/@img/**/*"
+      "**/node_modules/@img/**/*",
+      "**/node_modules/detect-libc/**/*",
+      "**/node_modules/pdf-to-printer/**/*",
+      "**/node_modules/@napi-rs/**/*",
+      "**/node_modules/node-abi/**/*",
+      "**/node_modules/**/binding.gyp",
+      "**/node_modules/**/*.node",
+      "**/node_modules/**/build/Release/**/*",
+      "**/node_modules/sharp/vendor/**/*",
+      "**/node_modules/sharp/build/**/*",
+      "**/node_modules/sharp/lib/**/*"
     ]
   }
 }

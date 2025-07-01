@@ -22,6 +22,26 @@
     "vite": "6.3.5"
   },
   "dependencies": {
+    "@types/node": "^24.0.8",
+    "detect-libc": "^2.0.3",
+    "pdf-to-printer": "^5.6.0",
     "sharp": "^0.34.2"
+  },
+  "build": {
+    "asar": true,
+    "asarUnpack": [
+      "**/node_modules/sharp/**/*",
+      "**/node_modules/@img/**/*",
+      "**/node_modules/detect-libc/**/*",
+      "**/node_modules/pdf-to-printer/**/*",
+      "**/node_modules/@napi-rs/**/*",
+      "**/node_modules/node-abi/**/*",
+      "**/node_modules/**/binding.gyp",
+      "**/node_modules/**/*.node",
+      "**/node_modules/**/build/Release/**/*",
+      "**/node_modules/sharp/vendor/**/*",
+      "**/node_modules/sharp/build/**/*",
+      "**/node_modules/sharp/lib/**/*"
+    ]
   }
 }

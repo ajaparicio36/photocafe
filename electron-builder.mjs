@@ -13,6 +13,20 @@ export default /** @type import('electron-builder').Configuration */
   linux: {
     target: ['deb'],
   },
+  asarUnpack: [
+    "**/node_modules/sharp/**/*",
+    "**/node_modules/@img/**/*",
+    "**/node_modules/detect-libc/**/*",
+    "**/node_modules/pdf-to-printer/**/*",
+    "**/node_modules/@napi-rs/**/*",
+    "**/node_modules/node-abi/**/*",
+    "**/node_modules/**/binding.gyp",
+    "**/node_modules/**/*.node",
+    "**/node_modules/**/build/Release/**/*",
+    "**/node_modules/sharp/vendor/**/*",
+    "**/node_modules/sharp/build/**/*",
+    "**/node_modules/sharp/lib/**/*"
+  ],
   /**
    * It is recommended to avoid using non-standard characters such as spaces in artifact names,
    * as they can unpredictably change during deployment, making them impossible to locate and download for update.

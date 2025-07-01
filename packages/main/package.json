@@ -21,5 +21,22 @@
     "electron-devtools-installer": "3.2.0",
     "typescript": "5.8.3",
     "vite": "6.3.5"
+  },
+  "build": {
+    "asar": true,
+    "asarUnpack": [
+      "**/node_modules/sharp/**/*",
+      "**/node_modules/@img/**/*",
+      "**/node_modules/detect-libc/**/*",
+      "**/node_modules/pdf-to-printer/**/*",
+      "**/node_modules/@napi-rs/**/*",
+      "**/node_modules/node-abi/**/*",
+      "**/node_modules/**/binding.gyp",
+      "**/node_modules/**/*.node",
+      "**/node_modules/**/build/Release/**/*",
+      "**/node_modules/sharp/vendor/**/*",
+      "**/node_modules/sharp/build/**/*",
+      "**/node_modules/sharp/lib/**/*"
+    ]
   }
 }
